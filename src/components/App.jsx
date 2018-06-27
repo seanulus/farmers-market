@@ -1,5 +1,6 @@
 import React from 'react';
 import ProduceList from './ProduceList';
+import ScheduleList from './ScheduleList';
 import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
 
@@ -8,8 +9,8 @@ function App(){
     <div>
       <Header/>
       <Switch>
-        <Route exact path='/' component={TicketList} />
-        <Route path='/newticket' component={NewTicketForm} />
+        <Route exact path='/schedule' component={ProduceList} />
+        <Route path='/produce' component={ScheduleList} />
       </Switch>
     </div>
   );

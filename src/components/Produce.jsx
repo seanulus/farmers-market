@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function Produce(props){
   return (
@@ -7,7 +7,7 @@ function Produce(props){
       <style jsx>{`
 
       `}</style>
-    <h3>{props.month}</h3>
+      <h3>{props.month}</h3>
       <p>{props.selection}</p>
     </div>
   );
@@ -18,4 +18,4 @@ Produce.propTypes = {
   selection: PropTypes.string
 };
 
-export default Ticket;
+export default Produce;
