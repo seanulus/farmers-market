@@ -7,8 +7,8 @@ function Header(){
       <style jsx>{`
 
       `}</style>
-      <h1>Help Queue</h1>
-      <Link to='/'>Home</Link> | <Link to='/newticket'>Create Ticket</Link>
+    <h1>Farmers Forever</h1>
+      <Link to='/'>Home</Link> | <Link to='/schedule'>Schedule</Link> | <Link to='/produce'>Available Produce</Link>
     </div>
   );
 }

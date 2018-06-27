@@ -8,14 +8,18 @@ function Produce(props){
 
       `}</style>
       <h3>{props.month}</h3>
-      <p>{props.selection}</p>
+      <ul>
+        {props.selection.map((item, index) =>
+          <li key={index}>{item}</li>
+        )}
+      </ul>
     </div>
   );
 }
 
 Produce.propTypes = {
   month: PropTypes.string,
-  selection: PropTypes.string
+  selection: PropTypes.array
 };
 
 export default Produce;

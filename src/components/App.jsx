@@ -1,4 +1,5 @@
 import React from 'react';
+import HomePage from './HomePage';
 import ProduceList from './ProduceList';
 import ScheduleList from './ScheduleList';
 import Header from './Header';
@@ -9,8 +10,9 @@ function App(){
     <div>
       <Header/>
       <Switch>
-        <Route exact path='/schedule' component={ProduceList} />
-        <Route path='/produce' component={ScheduleList} />
+        <Route exact path='/' component={HomePage} />
+        <Route path='/schedule' component={ScheduleList} />
+        <Route path='/produce' component={ProduceList} />
       </Switch>
     </div>
   );
