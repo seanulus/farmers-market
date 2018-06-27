@@ -1,5 +1,6 @@
 import React from 'react';
 import Produce from './Produce';
+import carrots from '../img/carrots.jpg';
 
 const availableProduce = [
   {
@@ -276,14 +277,26 @@ function ProduceList(){
   return(
     <div>
       <style jsx>{`
+        div {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
 
+        img {
+          width: 110%;
+          height: 132%;
+          position: absolute;
+          margin-top: 5px;
+        }
       `}</style>
-      <hr/>
+
       {availableProduce.map((produce, index) =>
         <Produce month = {produce.month}
           selection = {produce.selection}
           key={index}/>
       )}
+      <img src={carrots} />
     </div>
   );
 }
