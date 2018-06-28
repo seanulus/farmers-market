@@ -3,23 +3,23 @@ import PropTypes from 'prop-types';
 
 function Schedule(props){
 
-const info = {
-  backgroundColor: 'lightgrey',
-  color: 'navy',
-  width: 'auto',
-  height: '120px',
-  fontFamily: 'sans-serif',
-  fontSize: '20px'
-}
+  const info = {
+    backgroundColor: 'lightgrey',
+    color: 'navy',
+    width: 'auto',
+    height: '120px',
+    fontFamily: 'sans-serif',
+    fontSize: '20px'
+  };
 
-const notHours = {
-  marginTop: '5px',
-}
+  const notHours = {
+    marginTop: '5px',
+  };
 
-const calendar = {
-  backgroundColor: 'lightblue',
-  borderRadius: '20px',
-}
+  const calendar = {
+    backgroundColor: 'lightblue',
+    borderRadius: '20px',
+  };
 
   return (
     <div style={calendar}>
@@ -37,7 +37,7 @@ const calendar = {
       <h3>{props.day}</h3>
       <div style={info}>
         <p>{props.hours}<br/>
-        <div style={notHours}><b>{props.location}</b><br/> Booth: {props.booth}</div></p>
+          <div style={notHours}><b>{props.location}</b><br/> Booth: {props.booth}</div></p>
       </div>
     </div>
   );

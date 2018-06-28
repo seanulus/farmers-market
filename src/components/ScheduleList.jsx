@@ -42,13 +42,13 @@ const marketSchedule = [
 
 function ScheduleList(){
 
-const days = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(6, 1fr)',
-  gridColumnGap: '10px',
-  padding: '10px',
-  height: '240px'
-}
+  const days = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(6, 1fr)',
+    gridColumnGap: '10px',
+    padding: '10px',
+    height: '240px'
+  };
 
   return(
     <div style={days}>

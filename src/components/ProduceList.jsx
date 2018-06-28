@@ -1,6 +1,6 @@
 import React from 'react';
 import Produce from './Produce';
-import carrots from '../img/carrots.jpg';
+import carrots from '../assets/img/carrots.jpg';
 
 const availableProduce = [
   {
@@ -285,7 +285,7 @@ function ProduceList(){
 
         img {
           width: 110%;
-          height: 132%;
+          height: 100%;
           position: absolute;
           margin-top: 5px;
         }
